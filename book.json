@@ -5,9 +5,21 @@
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "root": ".",
-   
-
+    "plugins": [
+        "-search",
+        "-lunr",
+        "-sharing",
+        "-livereload",
+        "search-plus",
+        "hide-element",
+        "sectionx",
+        "multilingual-index"
+    ], 
     "pluginsConfig": {
+        "multilingual-index": { 
+            "enableSuper": true, 
+            "index":"index.html" 
+        },
         "tbfed-pagefooter": {
             "copyright":"Copyright &copy www.marsprotocol.com 2023",
             "modify_label": "更新时间：",
@@ -17,25 +29,6 @@
         "hide-element": {
             "elements": [".gitbook-link"]
         },
-
-        "pdf": {
-            "pageNumbers": true,
-            "fontFamily": "Arial",
-            "fontSize": 12,
-            "paperSize": "a4",
-            "margin": {
-                "right": 62,
-                "left": 62,
-                "top": 56,
-                "bottom": 56
-            }
-        },
-
-       "prism":{
-            "css":[
-                "prism-themes/themes/prism-darcula.css"
-            ]
-       },
 
        "sectionx": {
           "tag": "b"
